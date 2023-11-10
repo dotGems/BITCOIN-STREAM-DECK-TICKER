@@ -1,14 +1,8 @@
-from PIL import Image, ImageDraw, ImageFont
 import requests
 import os
-import time  # Import the time module
-from config import sdFolderDir
-
-#NOTES
-# STEP 1 : Setup Stream deck with 7 Fake Icons, [SYSTEM>OPEN]
-# STEP 2 : Find where the icons are stored on your computer, streamdeck will rename them, you need the associated new file names.
-# STEP 3 : open terminal, type "cd" then a space ... then drag and drop the folder where this .py file is stored. (this points terminal directory to your program)
-# STEP 4 : Run Program -> Terminal command : python sd_btc.py
+import time
+from config import sdFolderDir,d1,d2,d3,d4,d5,d6
+from PIL import Image, ImageDraw, ImageFont
 
 #Pulls the Bitcoin Price from coingecko
 def get_bitcoin_price():
@@ -55,13 +49,9 @@ if __name__ == "__main__":
 #MAC PATH TO STREAM DECK >Profiles>PROFILE>Images>" --- #stream deck auto renames your set images, copy genrated names to replace "custom_names" below
     folder_path = os.path.expanduser(sdFolderDir)
     custom_names = [
-        "TTQM3OKFAP77L4VT0JVFMPVR5SZ.png",
-        "SH1LFQM1TD6E73IEDKQD38FH9CZ.png",
-        "PC4LAN6J0T04BA1BCGHTNEVLDKZ.png",
-        "A9AV0TB4SH2HW5SVWJVIP31AP0Z.png",
-        "0NWSRVBHL95OW1QT1A8NDJJKFGZ.png",
-        "FDT33001LL0DF5E84IMFCQJL8KZ.png"
+        d1, d2, d3, d4, d5, d6
     ]
+    
 #runs the API price check every 5 seconds
     while True:  # Start an infinite loop
         try:
