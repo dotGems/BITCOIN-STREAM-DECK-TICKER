@@ -62,4 +62,4 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
 
-        time.sleep(60)  # Wait for 5 seconds before next execution
+        time.sleep(60)  # Wait for 60 seconds before next execution
