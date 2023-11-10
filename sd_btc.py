@@ -46,7 +46,6 @@ def create_digit_images(price, folder_path, custom_names):
 
 #places those pictures in the stream deck folder
 if __name__ == "__main__":
-#MAC PATH TO STREAM DECK >Profiles>PROFILE>Images>" --- #stream deck auto renames your set images, copy genrated names to replace "custom_names" below
     folder_path = os.path.expanduser(sdFolderDir)
     custom_names = [
         d1, d2, d3, d4, d5, d6
