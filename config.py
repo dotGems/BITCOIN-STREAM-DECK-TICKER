@@ -24,3 +24,5 @@ d6 = "FILE_NAME_HERE"
 # STEP 3 : open terminal, type "cd" then a space ... then drag and drop the folder where this .py file is stored. (this points terminal directory to this program)
 
 # STEP 4 : Run Program -> Terminal command : python sd_btc.py
+
+#Price will refresh when stream deck profiles change (reloads images)
