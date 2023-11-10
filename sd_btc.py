@@ -52,7 +52,7 @@ if __name__ == "__main__":
         d1, d2, d3, d4, d5, d6
     ]
     
-#runs the API price check every 5 seconds
+#runs the API price check every 60 seconds
     while True:  # Start an infinite loop
         try:
             price = get_bitcoin_price()
